@@ -9,7 +9,7 @@ const heartIcons = document.querySelectorAll("#card-heart-icon");
 // Loop with for-of
 for (const icon of heartIcons) {
   icon.addEventListener("click", function() {
-let heartCounterConverted = parseInt(heartCounter.innerText);
+    let heartCounterConverted = parseInt(heartCounter.innerText);
     heartCounter.innerText = heartCounterConverted + 1;
   });
 }
