@@ -25,7 +25,7 @@
         </div>
         <div class="nav-right-side flex items-center justify-end gap-4 hind-madurai-font font-bold ">
             <div class="heart-icon flex items-center gap-2 bg-[#41ff6b1a] py-2 px-4 rounded-full">
-                <span>0</span>
+                <span id="heart-icon-count">0</span>
                 <img src="./assets/heart.png" alt="heart icon" class="w-[24px] ">
             </div>
             <div class="coin-count flex items-center gap-2 bg-[#41ff6b1a] py-2 px-4 rounded-full ">
@@ -57,7 +57,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class=" fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">National Emergency Number</h3>
                 <p class="roboto-font text-lg mb-2">National Emergency</p>
@@ -72,7 +72,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#DFEFFF]"><img src="./assets/police.png" alt="police" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Police Helpline Number</h3>
                 <p class="roboto-font text-lg mb-2">Police</p>
@@ -87,7 +87,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/fire-service.png" alt="fire-service" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Fire Service Number</h3>
                 <p class="roboto-font text-lg mb-2">Fire Service</p>
@@ -102,7 +102,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/ambulance.png" alt="Ambulance" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Ambulance Service</h3>
                 <p class="roboto-font text-lg mb-2">Ambulance</p>
@@ -117,7 +117,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Women & Child Helpline</h3>
                 <p class="roboto-font text-lg mb-2">Women & Child Helpline</p>
@@ -132,7 +132,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Anti-Corruption Helpline</h3>
                 <p class="roboto-font text-lg mb-2">Anti-Corruption</p>
@@ -147,7 +147,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i  id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Electricity Helpline</h3>
                 <p class="roboto-font text-lg mb-2">Electricity Outage</p>
@@ -162,7 +162,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Brac Helpline</h3>
                 <p class="roboto-font text-lg mb-2">Brac</p>
@@ -177,7 +177,7 @@
             <div class="card min-w-[200px] bg-white p-5 rounded-2xl box-shadow ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="p-2 rounded-lg bg-[#FFE3E2]"><img src="./assets/emergency.png" alt="Emergency" class="w-[24px]"></div>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="card-heart-icon" class="fa-regular fa-heart"></i>
                 </div>
                 <h3 class="font-bold text-[#111111] text-lg hind-madurai-font">Bangladesh Railway Helpline </h3>
                 <p class="roboto-font text-lg mb-2">Bangladesh Railway</p>
