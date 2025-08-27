@@ -11,30 +11,44 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- Tailwind css CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom Css -->
+     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body >
+<body class="">
 
 <!-- Navbar Start Here -->
-<nav class="flex justify-between items-center py-[24px]">
-    <div class="nav-left-side flex items-center gap-2">
+<nav class=" flex flex-col md:flex-row gap-3 justify-between items-center py-[24px] max-w-[1280px] mx-auto px-4"> 
+    <div class="nav-left-side flex items-center gap-2 ">
         <img src="./assets/logo.png" alt="Site Logo" class="w-[50px]">
-        <h3 class="text-[#006747] font-black">Emergency <br> Service</h3>
+        <h3 class="text-[#006747] font-black leading-[1] text-2xl">Emergency <br> Service</h3>
     </div>
-    <div class="nav-right-side flex items-center gap-[40px]">
-        <div class="heart-icon flex items-center gap-3 bg-[#41ff6b1a] py-2 px-3 rounded-full">
+    <div class="nav-right-side flex items-center justify-end gap-4 hind-madurai-font font-bold ">
+        <div class="heart-icon flex items-center gap-2 bg-[#41ff6b1a] py-2 px-4 rounded-full">
             <span>0</span>
-            <img src="./assets/heart.png" alt="heart icon" class="w-[30px] ">
+            <img src="./assets/heart.png" alt="heart icon" class="w-[24px] ">
         </div>
-        <div class="coin-count flex items-center gap-3 bg-[#41ff6b1a] py-2 px-3 rounded-full">
+        <div class="coin-count flex items-center gap-2 bg-[#41ff6b1a] py-2 px-4 rounded-full ">
             <span>100</span>
             <img src="./assets/coin.png" alt="coin count" class="w-[24px]">
         </div>
-        <div class="copy-count flex items-center gap-3 bg-[#00A63E] py-2 px-3 rounded-full">
-            <p><span>0</span> Copy</p>
+        <div class="copy-count flex items-center gap-2 bg-[#00A63E] py-2 px-4 rounded-full text-white">
+            <span>0</span>
+            <p>Copy</p>
         </div>
     </div>
 </nav>
 
+<!-- Hero Section Start -->
+ <main>
+    <section>
+        <div class="mx-auto text-center text-white gradient-color py-5  px-4">
+            <img src="./assets/logo.png" alt="Logo" class="w-[92px] mx-auto">
+            <h1 class="font-bold text-2xl ">Emergency Service Directory</h1>
+            <p class="font-semibold leading-[2.5]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+
+        </div>
+    </section>
+ </main>
 
 
 
