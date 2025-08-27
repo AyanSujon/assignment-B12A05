@@ -1,17 +1,27 @@
-/* Google Font CDN: Hind Madurai and Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Font CDN: Hind Madurai, Roboto and Inter */
 
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Google fonts */
 .hind-madurai-font {
   font-family: "Hind Madurai", sans-serif;
 }
 .roboto-font {
   font-family: "Roboto", sans-serif;
 }
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
 
 /* Hero gradient Color */
 
 .gradient-color{
   background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);
+}
+
+/* Card box-shadow  */
+.box-shadow{
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15)
 }
 
 
