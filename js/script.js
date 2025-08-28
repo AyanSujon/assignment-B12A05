@@ -84,7 +84,13 @@ clearHistoryBtn.addEventListener("click", function() {
 // Copy button Functionalities 
 const copyButtons = document.querySelectorAll("#copy-btn");
 
-// Loop through each button
+// copy count element in the navbar 
+const copyCount = document.querySelector("#copy-count");
+
+// Initialize count
+let count = 0;
+
+// Loop through each copy button
 for (const btn of copyButtons) {
   btn.addEventListener("click", function() {
     // Find the closest card 
@@ -93,7 +99,12 @@ for (const btn of copyButtons) {
 
     // Copy the text to clipboard
     navigator.clipboard.writeText(cardNumber)
-      .then(() => {
+      .then(function() {
+        // Increment the copy count
+        count++;
+        copyCount.innerText = count;
+
+        // alert copied to clipboard 
         alert(`Copied: ${cardNumber}`);
       })
       .catch(err => {
