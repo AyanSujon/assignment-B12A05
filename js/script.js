@@ -73,12 +73,31 @@ for (const btn of callButtons) {
 
 // Clear History button Functionalities
 
-// Select the Clear History button
 const clearHistoryBtn = document.getElementById("clear-history-btn");
 
-// Add click event to clear all call history
 clearHistoryBtn.addEventListener("click", function() {
   // Remove all children inside callHistoryList
   callHistoryList.innerHTML = "";
 });
 
+
+// Copy button Functionalities 
+const copyButtons = document.querySelectorAll("#copy-btn");
+
+// Loop through each button
+for (const btn of copyButtons) {
+  btn.addEventListener("click", function() {
+    // Find the closest card 
+    const card = btn.closest(".card");
+    const cardNumber = card.querySelector("#card-number").innerText;
+
+    // Copy the text to clipboard
+    navigator.clipboard.writeText(cardNumber)
+      .then(() => {
+        alert(`Copied: ${cardNumber}`);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+  });
+}
