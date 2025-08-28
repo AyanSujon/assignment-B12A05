@@ -70,7 +70,6 @@ for (const btn of callButtons) {
   });
 }
 
-
 // Clear History button Functionalities
 
 const clearHistoryBtn = document.getElementById("clear-history-btn");
@@ -79,7 +78,6 @@ clearHistoryBtn.addEventListener("click", function() {
   // Remove all children inside callHistoryList
   callHistoryList.innerHTML = "";
 });
-
 
 // Copy button Functionalities 
 const copyButtons = document.querySelectorAll("#copy-btn");
