@@ -70,3 +70,15 @@ for (const btn of callButtons) {
   });
 }
 
+
+// Clear History button Functionalities
+
+// Select the Clear History button
+const clearHistoryBtn = document.getElementById("clear-history-btn");
+
+// Add click event to clear all call history
+clearHistoryBtn.addEventListener("click", function() {
+  // Remove all children inside callHistoryList
+  callHistoryList.innerHTML = "";
+});
+
