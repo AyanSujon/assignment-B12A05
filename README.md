@@ -26,11 +26,13 @@ parentContainer.appendChild(addNewDiv);
 Event Bubbling হলো JavaScript-এ DOM event-এর একটি behavior যেখানে child element এ click হওয়া ইভেন্টটা parent element-এর দিকে উপরে চলে যায়। যেমন প্রথমে parent, তারপর grandparent, এর পর সবশেষে root element (document) পর্যন্ত পৌঁছায়। এই প্রক্রিয়াকে “বাবলিং” বলা হয় কারণ ইভেন্টটা বুদবুদ (bubble) এর মতো উপরে ওঠে।
 
 ===================================================
+
 4. What is Event Delegation in JavaScript? Why is it useful?
 Event Delegation হলো JavaScript-এর একটি প্রক্রিয়া যেখানে parent element-এ listener বসিয়ে child element-এর ইভেন্ট handle করা। এতে সুবিধা রয়েছে Less Code, Dynamic elements, এবং Performance ভালো হয়।  
 
 
 =====================================================
+
 5. What is the difference between preventDefault() and stopPropagation() methods?
 preventDefault(): এটি default browser behavior বন্ধ করে বা click হওয়া Event এর page reload বন্ধ করে। 
 stopPropagation(): এটি event bubbling বা capturing বন্ধ করে দেয়। অর্থাৎ, ইভেন্ট parent বা ancestor element এ যাবে না।
